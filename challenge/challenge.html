@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<title>Challenge Form</title>
+		<link rel="stylesheet" href="challenge.css" />
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Kalnia:wght@400;700&display=swap" rel="stylesheet">
+	</head>
+	<body>
+		<header>
+			<h1>Contact us</h1>
+		</header>
+		<form action="" method="GET">
+			<section>
+				<h2>How can we help you?</h2>
+				<ul>
+					<li>
+						<label for="username">Your name</label>
+						<input type="text" name="user-name" id="username" required/>
+					</li>
+					<li>
+						<label for="useremail">Your E-mail Address</label>
+						<input type="text" name="user-email" id="useremail" required/>
+					</li>
+					<li>
+						<label for="user-phonenumber">Your Phone Number</label>
+						<input type="tel" name="user-phone-number" id="user-phonenumber" required minlength="5"/>
+					</li>
+				</ul>
+			</section>
+			
+			<section>
+				<label for="usermessage">Your message</label>
+				<textarea id="usermessage" name="user-message" rows="8" minlength="10" maxlength="200"></textarea>
+			</section>
+			
+			<section>
+				<label for="contact-way">How did you find us?</label>
+				<select id="contact-way" name="contact-way">
+					<option value="search">Web Search</option>
+					<option value="word-of-mouth">Word of Mouth</option>
+					<option value="other">Other</option>
+				</select>
+			</section>
+			
+			<section>
+				<h2>How should we reply?</h2>
+				<ul>
+					<li class="form-control-inline">
+						<input type="radio" name="reply" id="reply-call" value="call" required/>
+						<label for="reply-call">Call me</label>
+					</li>
+					<li class="form-control-inline">
+						<input type="radio" name="reply" id="reply-email" value="email" required/>
+						<label for="reply-email">Send me an email</label>
+					</li>
+					<li class="form-control-inline">
+						<input type="radio" name="reply" id="reply-none" value="none" required/>
+						<label for="reply-none">Don't reply</label>
+					</li>
+				</ul>
+			</section>
+				
+			<section>
+				<div class="form-control-inline">
+					<input type="checkbox" name="accept" id="accept-terms" value="accept-terms" required/>
+					<label for="accept-terms">Accept terms</label>
+				</div>
+			</section>
+			
+			<section id="btn">
+				<button type="reset">Clear</button>
+				<button type="submit">Submit</button>
+			</section>
+			
+		</form>
+	</body>
+</html>
